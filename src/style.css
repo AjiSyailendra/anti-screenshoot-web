@@ -1,0 +1,35 @@
+* {
+  font-family: sans-serif;
+}
+
+/* anti screenshot web */
+.black-full-screen {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+/* anti screenshot web */
+
+/* anti print web */
+@media print {
+  html,
+  body {
+    display: none;
+  }
+}
+/* anti print web */
